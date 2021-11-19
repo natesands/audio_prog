@@ -1,0 +1,12 @@
+https://www.cs.hmc.edu/~vrable/gnuplot/using-gnuplot.html
+
+the output of sinetext2 is two columns of datapoints for each sample.
+
+we can plot both on the same axis:
+
+plot "out" using 1 with lines, "out" using 2 with lines 
+
+in order to have an ascii version, run cmd after setting:
+set term dumb
+
+

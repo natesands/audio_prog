@@ -1,0 +1,2 @@
+gcc -o aiff2wave aiff2wave.c -I/usr/local/include -L/usr/local/lib -lsndfile
+

@@ -1,0 +1,27 @@
+a soundfile contains audio data at a particular sample rate (in Hz). Standard
+sample rates are 22,050, 44,100, 48,000, 96,000 and 192,000 (DVD audio).
+
+A soundfile can contain several channels of audio - 1, 2, 6 (Dolby 5.1)
+
+one frame contains sample data for each channel
+
+soundfiles can contain samples in a range of data formats... most common format
+is 16-bit, or C's short datatype.  (-32,767 to 32,767).  Other fomarts include:
+- 24-bit "packed" (3 bytes)
+- 32-bit floats
+- 32-bit integer (C's long and int)
+- 8-bit sample (older)
+- 64-bit float (possible in AIFF and WAVE formats)
+
+
+soundfiles can be written in a number of file formats, eg WAVE and AIFF,
+Microsofts' WAVEFORMATEXTENSIBLE, the new AIFF-C format (designed by apple to
+support range of compressed sample types plus added support for 32-bit floating
+point format.  Or the user may provide a custom format...
+
+speaker position:  
+stereo:  channel 1 is front left, channel 2 is front right
+in AIFF the channel configuration is ambiguous
+only soundfile formats supporting unambiguous speaker positions are
+WAVEFORMATEXTENSIBLE and new CAF file format (Apple)
+
